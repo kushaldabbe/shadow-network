@@ -7,7 +7,7 @@ export default function IntelBrief({ briefing, currentEvent, onEventAction, isLo
   return (
     <div className="panel h-full flex flex-col">
       <div className="panel-header">◈ INTELLIGENCE BRIEFING</div>
-      <div className="flex-1 overflow-y-auto p-3 space-y-3">
+      <div className="flex-1 overflow-y-auto p-2 space-y-2 min-h-0">
         {/* Current World Event */}
         {currentEvent && (
           <div className="bg-terminal-amber/5 border border-terminal-amber/20 rounded p-2">

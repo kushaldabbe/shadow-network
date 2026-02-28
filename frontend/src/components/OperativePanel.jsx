@@ -38,18 +38,18 @@ export default function OperativePanel({ operatives, onSelect, selectedOperative
   return (
     <div className="panel h-full flex flex-col">
       <div className="panel-header">◈ OPERATIVES — SIGNAL QUALITY</div>
-      <div className="p-2 flex-1 overflow-y-auto space-y-1">
+      <div className="p-1.5 flex-1 overflow-y-auto space-y-0.5">
         {operatives.map((op) => (
           <div
             key={op.codename}
             onClick={() => onSelect && onSelect(op.codename)}
-            className={`p-2 rounded cursor-pointer transition-colors text-xs ${
+            className={`p-1.5 rounded cursor-pointer transition-colors text-xs ${
               selectedOperative === op.codename
                 ? 'bg-terminal-green/10 border border-terminal-green/30'
                 : 'hover:bg-white/5 border border-transparent'
             }`}
           >
-            <div className="flex items-center justify-between mb-1">
+            <div className="flex items-center justify-between">
               <div className="flex items-center gap-2">
                 <span>{getStatusDot(op.status)}</span>
                 <span
@@ -67,11 +67,10 @@ export default function OperativePanel({ operatives, onSelect, selectedOperative
               <span className="text-gray-500 text-[10px]">{op.status.toUpperCase()}</span>
             </div>
 
-            <div className="flex items-center gap-2 ml-6 mb-1">
+            <div className="flex items-center gap-2 ml-6">
               <span className="text-gray-500 text-[10px] w-16">{op.location}</span>
+              {/* Signal quality bar */}
             </div>
-
-            {/* Signal quality bar */}
             <div className="ml-6 flex items-center gap-2">
               <div className="signal-bar flex-1">
                 <div
@@ -83,8 +82,8 @@ export default function OperativePanel({ operatives, onSelect, selectedOperative
             </div>
 
             {op.mission_count > 0 && (
-              <div className="text-[10px] text-gray-600 ml-6 mt-1">
-                {op.mission_count} mission{op.mission_count !== 1 ? 's' : ''} completed
+              <div className="text-[9px] text-gray-600 ml-6">
+                {op.mission_count} mission{op.mission_count !== 1 ? 's' : ''}
               </div>
             )}
           </div>

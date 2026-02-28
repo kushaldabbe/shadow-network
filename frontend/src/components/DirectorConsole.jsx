@@ -33,16 +33,16 @@ export default function DirectorConsole({ operatives, onSendOrder, isLoading }) 
   return (
     <div className="panel h-full flex flex-col">
       <div className="panel-header">◈ DIRECTOR CONSOLE</div>
-      <div className="p-3 flex flex-col flex-1">
+      <div className="p-2 flex flex-col flex-1 overflow-y-auto min-h-0">
         {/* Operative selector */}
-        <div className="mb-3">
-          <label className="text-[10px] text-gray-500 tracking-wider block mb-1">
+        <div className="mb-2">
+          <label className="text-[9px] text-gray-500 tracking-wider block mb-0.5">
             TARGET OPERATIVE
           </label>
           <select
             value={selectedOperative}
             onChange={(e) => setSelectedOperative(e.target.value)}
-            className="w-full bg-black/50 border border-terminal-border rounded px-2 py-1.5 text-xs text-terminal-green focus:border-terminal-green focus:outline-none"
+            className="w-full bg-black/50 border border-terminal-border rounded px-2 py-1 text-[11px] text-terminal-green focus:border-terminal-green focus:outline-none"
           >
             <option value="">AUTO-ROUTE (Orchestrator decides)</option>
             {activeOperatives.map((op) => (
@@ -54,22 +54,22 @@ export default function DirectorConsole({ operatives, onSendOrder, isLoading }) 
         </div>
 
         {/* Order input */}
-        <form onSubmit={handleSubmit} className="flex-1 flex flex-col">
-          <label className="text-[10px] text-gray-500 tracking-wider block mb-1">
+        <form onSubmit={handleSubmit} className="flex flex-col">
+          <label className="text-[9px] text-gray-500 tracking-wider block mb-0.5">
             MISSION ORDER
           </label>
           <textarea
             value={orderText}
             onChange={(e) => setOrderText(e.target.value)}
             placeholder="Type your order to the operative..."
-            className="flex-1 bg-black/50 border border-terminal-border rounded px-2 py-1.5 text-xs text-gray-200 focus:border-terminal-green focus:outline-none resize-none min-h-[60px]"
+            className="bg-black/50 border border-terminal-border rounded px-2 py-1 text-xs text-gray-200 focus:border-terminal-green focus:outline-none resize-none h-[48px]"
             disabled={isLoading}
           />
 
           <button
             type="submit"
             disabled={!orderText.trim() || isLoading}
-            className={`mt-2 w-full py-2 rounded text-xs font-bold tracking-widest transition-all btn-glow ${
+            className={`mt-1.5 w-full py-1.5 rounded text-[11px] font-bold tracking-widest transition-all btn-glow ${
               isLoading
                 ? 'bg-gray-800 text-gray-600 cursor-wait'
                 : orderText.trim()
@@ -88,14 +88,14 @@ export default function DirectorConsole({ operatives, onSendOrder, isLoading }) 
         </form>
 
         {/* Quick orders */}
-        <div className="mt-3 pt-2 border-t border-terminal-border">
-          <div className="text-[10px] text-gray-600 tracking-wider mb-1">SAMPLE MISSIONS</div>
-          <div className="space-y-1">
+        <div className="mt-2 pt-1.5 border-t border-terminal-border">
+          <div className="text-[9px] text-gray-600 tracking-wider mb-0.5">SAMPLE MISSIONS</div>
+          <div className="space-y-px">
             {quickOrders.map((order, i) => (
               <button
                 key={i}
                 onClick={() => handleQuickOrder(order)}
-                className="w-full text-left text-[10px] text-gray-500 hover:text-terminal-green px-1.5 py-1 rounded hover:bg-terminal-green/5 transition-colors truncate"
+                className="w-full text-left text-[10px] text-gray-500 hover:text-terminal-green px-1.5 py-0.5 rounded hover:bg-terminal-green/5 transition-colors truncate"
                 disabled={isLoading}
               >
                 {order.icon} {order.label}

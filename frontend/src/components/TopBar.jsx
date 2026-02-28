@@ -28,22 +28,22 @@ export default function TopBar({ worldState }) {
   };
 
   return (
-    <div className="bg-terminal-panel border-b border-terminal-border px-4 py-2 flex items-center justify-between">
+    <div className="bg-terminal-panel border-b border-terminal-border px-4 py-1.5 flex items-center justify-between">
       {/* Title */}
       <div className="flex items-center gap-3">
-        <span className="text-terminal-green font-bold text-sm tracking-widest">
+        <span className="text-terminal-green font-bold text-xs tracking-widest">
           ◆ SHADOW NETWORK
         </span>
-        <span className="text-gray-600 text-xs">|</span>
-        <span className="text-gray-400 text-xs tracking-wider">DIRECTOR CONSOLE v1.0</span>
+        <span className="text-gray-600 text-[10px]">|</span>
+        <span className="text-gray-400 text-[10px] tracking-wider">DIRECTOR CONSOLE v1.0</span>
       </div>
 
       {/* Status indicators */}
-      <div className="flex items-center gap-6 text-xs">
+      <div className="flex items-center gap-4 text-[11px]">
         {/* Turn */}
         <div className="flex items-center gap-2">
           <span className="text-gray-500 tracking-wider">TURN</span>
-          <span className="text-terminal-green font-bold text-base">{turn || 1}</span>
+          <span className="text-terminal-green font-bold text-sm">{turn || 1}</span>
         </div>
 
         <span className="text-gray-700">│</span>
