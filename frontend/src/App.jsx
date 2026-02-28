@@ -24,6 +24,7 @@ export default function App() {
   const [isLoading, setIsLoading] = useState(false);
   const [turnStarted, setTurnStarted] = useState(false);
   const [statusMessage, setStatusMessage] = useState('Initializing secure connection...');
+  const [pendingOrder, setPendingOrder] = useState(null);
 
   const audioRef = useRef(null);
 
@@ -103,19 +104,44 @@ export default function App() {
   // --- Order Handling ---
   const handleSendOrder = async (order, operative) => {
     setIsLoading(true);
+    setPendingOrder({ order, operative });
     setStatusMessage(`Transmitting order${operative ? ` to ${operative}` : ''}...`);
     try {
       const orderText = operative ? `${operative}: ${order}` : order;
       const result = await api.issueOrder(orderText, operative);
 
       if (result.game_over) {
+        setPendingOrder(null);
         setGameOver(result.game_over);
         return;
       }
 
-      // Add transmission to log
+      // Fetch audio in parallel with showing the transmission
       if (result.transmission) {
+        const codename = result.transmission.codename;
+        const responseText = result.transmission.response;
+
+        // Start audio generation immediately
+        const audioPromise = api.generateAudio(codename, responseText);
+
+        // Wait for audio before showing the transmission
+        let audioUrl = null;
+        try {
+          audioUrl = await audioPromise;
+        } catch (err) {
+          console.error('Audio generation failed:', err);
+        }
+
+        // Show transmission and play audio simultaneously
+        setPendingOrder(null);
         setTransmissions((prev) => [...prev, result.transmission]);
+
+        if (audioUrl && audioRef.current) {
+          audioRef.current.src = audioUrl;
+          audioRef.current.play().catch(() => {});
+        }
+      } else {
+        setPendingOrder(null);
       }
 
       // Update intel report
@@ -126,6 +152,7 @@ export default function App() {
       setStatusMessage('Transmission received. Awaiting further orders.');
       await refreshState();
     } catch (err) {
+      setPendingOrder(null);
       setStatusMessage(`Transmission error: ${err.message}`);
     } finally {
       setIsLoading(false);
@@ -245,6 +272,7 @@ export default function App() {
           <TransmissionLog
             transmissions={transmissions}
             onPlayAudio={handlePlayAudio}
+            pendingOrder={pendingOrder}
           />
         </div>
 

@@ -4,14 +4,24 @@
   "background": "Ukrainian journalist working under cover. Genuine ideological commitment to fighting Russian aggression. Uses her media credentials to access conflict zones and intelligence sources. Sometimes acts on her own convictions rather than waiting for orders.",
   "location": "Kyiv, Ukraine",
   "region": "eastern_europe",
-  "loyalty": 78,
-  "hidden_agenda": "Genuinely ideological anti-Russia — may exceed orders if she believes direct action will hurt Russian operations more than the cautious approach the Director orders. Will sometimes act unilaterally if she sees an opportunity.",
-  "missions": [],
+  "loyalty": 73,
+  "hidden_agenda": "Genuinely ideological anti-Russia \u00e2\u20ac\u201d may exceed orders if she believes direct action will hurt Russian operations more than the cautious approach the Director orders. Will sometimes act unilaterally if she sees an opportunity.",
+  "missions": [
+    {
+      "id": "mission_1_SABLE",
+      "turn": 1,
+      "order_received": "SABLE: SABLE: Establish contact with the defecting double agent",
+      "decision": "exceed",
+      "reason_hidden": "Asset's intel could save Ukrainian lives; agency caution is a luxury we can't afford.",
+      "reported_to_director": "**TRANSMISSION BEGINS \u2014 URGENT PRIORITY**\n\nDirector, this is SABLE. I\u2019m in position, Kyiv\u2019s streets humming with tension like a live wire. The air smells of smoke and diesel\u2014war never sleeps here. I\u2019v",
+      "outcome": "Decision: exceed, loyalty shift: -5"
+    }
+  ],
   "relationships": {
-    "NIGHTHAWK": "respects — fellow idealist on opposite side of the world",
-    "CEDAR": "professional — he provides good SIGINT",
-    "GHOST": "distrusts — heard rumors about his ISI contacts",
-    "LOTUS": "wary — too calculating for SABLE's taste"
+    "NIGHTHAWK": "respects \u00e2\u20ac\u201d fellow idealist on opposite side of the world",
+    "CEDAR": "professional \u00e2\u20ac\u201d he provides good SIGINT",
+    "GHOST": "distrusts \u00e2\u20ac\u201d heard rumors about his ISI contacts",
+    "LOTUS": "wary \u00e2\u20ac\u201d too calculating for SABLE's taste"
   },
   "current_status": "active",
   "known_compromises": [],

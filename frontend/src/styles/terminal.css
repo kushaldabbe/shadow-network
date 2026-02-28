@@ -205,3 +205,10 @@ body {
   from { opacity: 0; }
   to { opacity: 1; }
 }
+
+/* Transmitting progress pulse */
+@keyframes transmitPulse {
+  0% { width: 20%; opacity: 0.4; }
+  50% { width: 80%; opacity: 0.8; }
+  100% { width: 20%; opacity: 0.4; }
+}

@@ -15,7 +15,7 @@
     },
     "eastern_europe": {
       "name": "Eastern Europe",
-      "tension": 94,
+      "tension": 85,
       "active_missions": [],
       "flag": "\u00f0\u0178\u2021\u00ba\u00f0\u0178\u2021\u00a6"
     },
@@ -28,52 +28,31 @@
   },
   "compromised_assets": [],
   "agency_exposure_level": 10,
-  "director_trust_score": 81,
+  "director_trust_score": 80,
   "threat_level": "MODERATE",
   "mission_log": [
     {
       "turn": 1,
-      "operative": "NIGHTHAWK",
-      "order": "NIGHTHAWK: NIGHTHAWK: Hello there",
-      "response_summary": "**TRANSMISSION BEGINS**\n\n**Agent:** NIGHTHAWK\n**Location:** Tehran, secure safehouse\n**Status:** Standby\n\n**Message:** Acknowledged. No actionable int",
-      "mission_type": "field_operation"
-    },
-    {
-      "turn": 1,
-      "operative": "NIGHTHAWK",
-      "order": "Give me the updates for the current situation",
-      "response_summary": "**TRANSMISSION BEGINS**\n\n**Agent:** NIGHTHAWK\n**Location:** Tehran, secure safehouse\n**Status:** Operational\n\n**Situation Report:**\n- **Local Environm",
+      "operative": "SABLE",
+      "order": "SABLE: SABLE: Establish contact with the defecting double agent",
+      "response_summary": "**TRANSMISSION BEGINS \u2014 URGENT PRIORITY**\n\nDirector, this is SABLE. I\u2019m in position, Kyiv\u2019s streets humming with tension like a live wire. The air sme",
       "mission_type": "field_operation"
     }
   ],
   "world_events": [
     {
-      "event_title": "Escalating Cyber Warfare in Eastern Europe",
-      "event_description": "In the past 48 hours, a series of coordinated cyber attacks have targeted critical infrastructure in Ukraine and neighboring NATO-aligned countries. Power grids in Kyiv experienced brief but widespread outages, while financial institutions in Poland and Lithuania reported sophisticated breaches. Western intelligence sources attribute the attacks to a Russian state-sponsored hacking group, though Moscow has denied involvement. The incidents coincide with heightened military exercises near the Belarusian border, raising concerns of hybrid warfare tactics. Analysts warn that these cyber operations could be a precursor to more direct kinetic actions in the region.",
+      "event_title": "Escalating Cyber Warfare in Eastern Europe Triggers NATO Alert",
+      "event_description": "In the past 48 hours, a series of sophisticated cyberattacks have targeted critical infrastructure across Eastern Europe, with Ukraine and Poland bearing the brunt of the assault. The attacks, which disrupted power grids and financial systems, have been attributed to a state-sponsored hacking group with known ties to Russian intelligence. NATO has convened an emergency session to assess the situation, with Secretary General Jens Stoltenberg describing the attacks as 'a dangerous escalation that crosses red lines.' Meanwhile, Ukrainian officials have publicly accused Moscow of orchestrating the campaign, though the Kremlin has denied involvement. Cybersecurity firms report the malware used bears striking similarities to tools deployed in previous attacks linked to the GRU, Russia's military intelligence agency.",
       "affected_region": "eastern_europe",
-      "tension_impact": 12,
+      "tension_impact": 15,
       "suggested_actions": [
-        "Deploy SABLE for on-the-ground reconnaissance in Kyiv to assess physical infrastructure vulnerabilities",
-        "Task CEDAR with monitoring Israeli cyber intelligence channels for potential Russian digital signatures",
-        "Initiate diplomatic backchannel communications to de-escalate tensions before further attacks occur",
-        "Prepare extraction protocols for high-value assets in the region"
+        "Deploy SABLE to Kyiv for on-the-ground assessment of cyber defenses and potential physical sabotage vectors",
+        "Task GHOST with probing Islamabad's intelligence channels for any Pakistani involvement or knowledge of the attacks",
+        "Initiate a high-level diplomatic contact mission via CEDAR to gather intel from Israeli cybersecurity firms with NATO ties",
+        "Order NIGHTHAWK to monitor Iranian reactions and potential cyber collaborations with Russia"
       ],
       "turn": 1,
-      "timestamp": "2026-02-28T20:59:47.269292"
-    },
-    {
-      "event_title": "Cyberattack on Kyiv Power Grid Triggers Blackout",
-      "event_description": "In the early hours of this morning, a sophisticated cyberattack targeted Ukraine's power grid, plunging Kyiv and surrounding regions into darkness. Initial reports indicate that the attack, which exploited vulnerabilities in the grid's control systems, has left over 2 million residents without electricity. Ukrainian officials have pointed to 'foreign state-sponsored actors' as the likely culprits, though no group has yet claimed responsibility. The attack coincides with heightened military tensions along the eastern border, where Russian forces have been observed conducting large-scale exercises. Analysts warn that this could mark a dangerous escalation in hybrid warfare tactics, blending cyber operations with traditional military posturing.",
-      "affected_region": "eastern_europe",
-      "tension_impact": 12,
-      "suggested_actions": [
-        "Deploy SABLE to investigate the cyberattack's origin and assess potential follow-up threats",
-        "Task GHOST with gathering intelligence on Russian military movements near the Ukrainian border",
-        "Initiate contact with allied intelligence agencies to share cyber threat indicators and coordinate response",
-        "Prepare contingency plans for potential retaliatory cyber operations or kinetic strikes"
-      ],
-      "turn": 1,
-      "timestamp": "2026-03-01T08:07:40.716906"
+      "timestamp": "2026-03-01T08:33:40.830864"
     }
   ],
   "rogue_events": []

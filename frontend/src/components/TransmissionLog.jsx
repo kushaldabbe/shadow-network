@@ -3,7 +3,7 @@ import React, { useRef, useEffect, useState } from 'react';
 /**
  * TransmissionLog — Scrollable log of operative transmissions with audio playback.
  */
-export default function TransmissionLog({ transmissions, onPlayAudio }) {
+export default function TransmissionLog({ transmissions, onPlayAudio, pendingOrder }) {
   const logEndRef = useRef(null);
   const [playingId, setPlayingId] = useState(null);
 
@@ -45,7 +45,7 @@ export default function TransmissionLog({ transmissions, onPlayAudio }) {
     return badges[risk] || badges.medium;
   };
 
-  if (!transmissions || transmissions.length === 0) {
+  if ((!transmissions || transmissions.length === 0) && !pendingOrder) {
     return (
       <div className="panel h-full flex flex-col">
         <div className="panel-header">◈ TRANSMISSION LOG</div>
@@ -66,6 +66,29 @@ export default function TransmissionLog({ transmissions, onPlayAudio }) {
         <span className="text-gray-500 text-[10px]">{transmissions.length} entries</span>
       </div>
       <div className="flex-1 overflow-y-auto p-2 space-y-2">
+        {/* Pending transmission indicator */}
+        {pendingOrder && (
+          <div className="transmission-enter bg-black/30 border border-terminal-amber/30 rounded p-2">
+            <div className="flex items-center gap-2 mb-2">
+              <div className="w-2 h-2 bg-terminal-amber rounded-full animate-pulse" />
+              <span className="text-terminal-amber text-xs font-bold tracking-wider">
+                TRANSMITTING{pendingOrder.operative ? ` TO ${pendingOrder.operative}` : ''}
+              </span>
+            </div>
+            <div className="text-[10px] text-gray-500 italic mb-2">
+              ORDER: {pendingOrder.order}
+            </div>
+            <div className="flex items-center gap-1 text-[10px] text-gray-600">
+              <span className="inline-block w-1.5 h-1.5 bg-terminal-green rounded-full animate-pulse" />
+              <span>Encrypting transmission</span>
+              <span className="loading-dots"></span>
+            </div>
+            <div className="mt-2 h-1 bg-gray-900 rounded overflow-hidden">
+              <div className="h-full bg-terminal-amber/50 rounded animate-[transmitPulse_2s_ease-in-out_infinite]" style={{ width: '60%' }} />
+            </div>
+          </div>
+        )}
+
         {transmissions.map((t) => (
           <div
             key={t.id}

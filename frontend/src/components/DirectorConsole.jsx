@@ -8,11 +8,12 @@ export default function DirectorConsole({ operatives, onSendOrder, isLoading }) 
   const [orderText, setOrderText] = useState('');
 
   const quickOrders = [
-    'Conduct surveillance on target area',
-    'Report current intelligence assessment',
-    'Investigate recent signal anomaly',
-    'Establish contact with local asset',
-    'Monitor border crossing activity',
+    { label: 'Investigate the uranium smuggling ring near the border', icon: '☢' },
+    { label: 'Establish contact with the defecting double agent', icon: '🕵' },
+    { label: 'Report all known intel on recent embassy surveillance', icon: '📡' },
+    { label: 'Conduct dead drop exchange at the designated safe house', icon: '📦' },
+    { label: 'Monitor suspect arms dealer movements in the region', icon: '🔍' },
+    { label: 'Extract compromised asset before cover is blown', icon: '🚁' },
   ];
 
   const handleSubmit = (e) => {
@@ -24,7 +25,7 @@ export default function DirectorConsole({ operatives, onSendOrder, isLoading }) 
   };
 
   const handleQuickOrder = (order) => {
-    setOrderText(order);
+    setOrderText(order.label || order);
   };
 
   const activeOperatives = (operatives || []).filter((op) => op.status === 'active');
@@ -88,16 +89,16 @@ export default function DirectorConsole({ operatives, onSendOrder, isLoading }) 
 
         {/* Quick orders */}
         <div className="mt-3 pt-2 border-t border-terminal-border">
-          <div className="text-[10px] text-gray-600 tracking-wider mb-1">QUICK ORDERS</div>
+          <div className="text-[10px] text-gray-600 tracking-wider mb-1">SAMPLE MISSIONS</div>
           <div className="space-y-1">
             {quickOrders.map((order, i) => (
               <button
                 key={i}
                 onClick={() => handleQuickOrder(order)}
-                className="w-full text-left text-[10px] text-gray-500 hover:text-terminal-green px-1 py-0.5 rounded hover:bg-terminal-green/5 transition-colors truncate"
+                className="w-full text-left text-[10px] text-gray-500 hover:text-terminal-green px-1.5 py-1 rounded hover:bg-terminal-green/5 transition-colors truncate"
                 disabled={isLoading}
               >
-                › {order}
+                {order.icon} {order.label}
               </button>
             ))}
           </div>
