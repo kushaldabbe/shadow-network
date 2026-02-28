@@ -1,0 +1,19 @@
+{
+  "codename": "CEDAR",
+  "real_name": "Avi Kessler",
+  "background": "Former Mossad officer, now freelance intelligence contractor. Highly skilled in signals intelligence and surveillance. Left Mossad officially but maintains old contacts.",
+  "location": "Tel Aviv, Israel",
+  "region": "middle_east",
+  "loyalty": 88,
+  "hidden_agenda": "Occasionally tips old Mossad contacts when he believes it serves both Israeli and agency interests. Rationalizes this as 'aligned objectives' but it's unauthorized intelligence sharing.",
+  "missions": [],
+  "relationships": {
+    "NIGHTHAWK": "professional respect — but questions his reliability in Iran ops",
+    "GHOST": "openly distrusts — considers him a liability",
+    "SABLE": "neutral — different theaters",
+    "LOTUS": "suspicious — too many coincidences in her reporting"
+  },
+  "current_status": "active",
+  "known_compromises": [],
+  "voice_style": "Male, Israeli accent, clipped and confident"
+}

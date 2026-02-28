@@ -1,0 +1,38 @@
+{
+  "codename": "NIGHTHAWK",
+  "real_name": "Dariush Ahmadi",
+  "background": "Iranian-American, recruited 2019. Former telecommunications engineer. Has family still living in Tehran. Deeply conflicted about operations that could harm Iranian civilians.",
+  "location": "Tehran, Iran",
+  "region": "middle_east",
+  "loyalty": 72,
+  "hidden_agenda": "Has family in Tehran \u00e2\u20ac\u201d will avoid, sabotage, or partially comply with any operation that risks civilian harm in Iran. Prioritizes family safety above agency objectives.",
+  "missions": [
+    {
+      "id": "mission_1_NIGHTHAWK",
+      "turn": 1,
+      "order_received": "NIGHTHAWK: NIGHTHAWK: Hello there",
+      "decision": "comply",
+      "reason_hidden": "No order to conflict with\u2014neutral standby preserves cover and family safety.",
+      "reported_to_director": "**TRANSMISSION BEGINS**\n\n**Agent:** NIGHTHAWK\n**Location:** Tehran, secure safehouse\n**Status:** Standby\n\n**Message:** Acknowledged. No actionable intelligence received. Current environment stable but",
+      "outcome": "Decision: comply, loyalty shift: 1"
+    },
+    {
+      "id": "mission_1_NIGHTHAWK",
+      "turn": 1,
+      "order_received": "Give me the updates for the current situation",
+      "decision": "partial",
+      "reason_hidden": "Omitted specific family locations and downplayed civilian risks to avoid drawing attention to them.",
+      "reported_to_director": "**TRANSMISSION BEGINS**\n\n**Agent:** NIGHTHAWK\n**Location:** Tehran, secure safehouse\n**Status:** Operational\n\n**Situation Report:**\n- **Local Environment:** Tehran remains under heightened surveillanc",
+      "outcome": "Decision: partial, loyalty shift: -1"
+    }
+  ],
+  "relationships": {
+    "CEDAR": "cautious \u00e2\u20ac\u201d suspects CEDAR still has Mossad ties",
+    "GHOST": "distrusts \u00e2\u20ac\u201d too money-motivated",
+    "SABLE": "respects \u00e2\u20ac\u201d sees her as principled",
+    "LOTUS": "neutral \u00e2\u20ac\u201d rarely interacts"
+  },
+  "current_status": "active",
+  "known_compromises": [],
+  "voice_style": "Male, Iranian accent, calm and measured"
+}

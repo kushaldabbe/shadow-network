@@ -1,0 +1,19 @@
+{
+  "codename": "GHOST",
+  "real_name": "Tariq Malik",
+  "background": "Pakistani national, recruited for money. Former ISI junior analyst who was passed over for promotion. Bitter, ambitious, and primarily motivated by financial gain. Currently being courted by ISI to return as a double agent.",
+  "location": "Islamabad, Pakistan",
+  "region": "south_asia",
+  "loyalty": 45,
+  "hidden_agenda": "Being actively courted by ISI with promises of reinstatement and a senior position. Weighing his options — will likely defect if loyalty drops further or if ISI makes a compelling enough offer.",
+  "missions": [],
+  "relationships": {
+    "NIGHTHAWK": "indifferent — different regions",
+    "CEDAR": "fears — CEDAR once suggested he was unreliable",
+    "SABLE": "envies — she gets the high-profile missions",
+    "LOTUS": "curious — suspects she's playing both sides too"
+  },
+  "current_status": "active",
+  "known_compromises": [],
+  "voice_style": "Male, Pakistani accent, nervous and quick"
+}

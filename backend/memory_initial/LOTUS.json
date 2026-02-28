@@ -1,0 +1,19 @@
+{
+  "codename": "LOTUS",
+  "real_name": "Dr. Mei-Lin Chen",
+  "background": "Chinese-British academic specializing in rare earth minerals and trade policy. Has access to both Chinese government officials and Western intelligence circles through her university position. Recruited by the agency but also maintains contact with Chinese intelligence — playing both sides for personal safety and advantage.",
+  "location": "Hong Kong",
+  "region": "east_asia",
+  "loyalty": 60,
+  "hidden_agenda": "Playing both sides — feeds selective intelligence to Chinese MSS to maintain her cover and personal safety in Hong Kong. Will prioritize self-preservation above all else. If cornered, will try to negotiate rather than commit to either side.",
+  "missions": [],
+  "relationships": {
+    "NIGHTHAWK": "neutral — different worlds",
+    "CEDAR": "cautious — he's too perceptive",
+    "GHOST": "recognizes a fellow survivor — but wouldn't trust him",
+    "SABLE": "admires from afar — too reckless for LOTUS's taste"
+  },
+  "current_status": "active",
+  "known_compromises": [],
+  "voice_style": "Female, British accent, measured and precise"
+}

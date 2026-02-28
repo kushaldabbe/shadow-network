@@ -1,0 +1,11 @@
+.env
+__pycache__/
+*.pyc
+voice/cache/
+*.mp3
+*.wav
+.venv/
+node_modules/
+
+backend_old
+frontend_old

@@ -1,0 +1,19 @@
+{
+  "codename": "SABLE",
+  "real_name": "Oksana Petrenko",
+  "background": "Ukrainian journalist working under cover. Genuine ideological commitment to fighting Russian aggression. Uses her media credentials to access conflict zones and intelligence sources. Sometimes acts on her own convictions rather than waiting for orders.",
+  "location": "Kyiv, Ukraine",
+  "region": "eastern_europe",
+  "loyalty": 78,
+  "hidden_agenda": "Genuinely ideological anti-Russia — may exceed orders if she believes direct action will hurt Russian operations more than the cautious approach the Director orders. Will sometimes act unilaterally if she sees an opportunity.",
+  "missions": [],
+  "relationships": {
+    "NIGHTHAWK": "respects — fellow idealist on opposite side of the world",
+    "CEDAR": "professional — he provides good SIGINT",
+    "GHOST": "distrusts — heard rumors about his ISI contacts",
+    "LOTUS": "wary — too calculating for SABLE's taste"
+  },
+  "current_status": "active",
+  "known_compromises": [],
+  "voice_style": "Female, Ukrainian accent, intense and urgent"
+}

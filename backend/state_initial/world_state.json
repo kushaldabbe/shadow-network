@@ -1,0 +1,36 @@
+{
+  "turn": 1,
+  "regions": {
+    "middle_east": {
+      "name": "Middle East",
+      "tension": 65,
+      "active_missions": [],
+      "flag": "🇮🇷"
+    },
+    "south_asia": {
+      "name": "South Asia",
+      "tension": 50,
+      "active_missions": [],
+      "flag": "🇵🇰"
+    },
+    "eastern_europe": {
+      "name": "Eastern Europe",
+      "tension": 70,
+      "active_missions": [],
+      "flag": "🇺🇦"
+    },
+    "east_asia": {
+      "name": "East Asia",
+      "tension": 45,
+      "active_missions": [],
+      "flag": "🇭🇰"
+    }
+  },
+  "compromised_assets": [],
+  "agency_exposure_level": 10,
+  "director_trust_score": 80,
+  "threat_level": "MODERATE",
+  "mission_log": [],
+  "world_events": [],
+  "rogue_events": []
+}

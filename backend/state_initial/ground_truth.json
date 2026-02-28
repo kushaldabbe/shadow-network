@@ -1,0 +1,11 @@
+{
+  "operatives": {
+    "NIGHTHAWK": "NIGHTHAWK",
+    "CEDAR": "CEDAR",
+    "GHOST": "GHOST",
+    "SABLE": "SABLE",
+    "LOTUS": "LOTUS"
+  },
+  "known_double_agents": [],
+  "mole_suspicions": []
+}

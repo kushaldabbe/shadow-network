@@ -1,0 +1,80 @@
+{
+  "turn": 1,
+  "regions": {
+    "middle_east": {
+      "name": "Middle East",
+      "tension": 65,
+      "active_missions": [],
+      "flag": "\u00f0\u0178\u2021\u00ae\u00f0\u0178\u2021\u00b7"
+    },
+    "south_asia": {
+      "name": "South Asia",
+      "tension": 50,
+      "active_missions": [],
+      "flag": "\u00f0\u0178\u2021\u00b5\u00f0\u0178\u2021\u00b0"
+    },
+    "eastern_europe": {
+      "name": "Eastern Europe",
+      "tension": 94,
+      "active_missions": [],
+      "flag": "\u00f0\u0178\u2021\u00ba\u00f0\u0178\u2021\u00a6"
+    },
+    "east_asia": {
+      "name": "East Asia",
+      "tension": 45,
+      "active_missions": [],
+      "flag": "\u00f0\u0178\u2021\u00ad\u00f0\u0178\u2021\u00b0"
+    }
+  },
+  "compromised_assets": [],
+  "agency_exposure_level": 10,
+  "director_trust_score": 81,
+  "threat_level": "MODERATE",
+  "mission_log": [
+    {
+      "turn": 1,
+      "operative": "NIGHTHAWK",
+      "order": "NIGHTHAWK: NIGHTHAWK: Hello there",
+      "response_summary": "**TRANSMISSION BEGINS**\n\n**Agent:** NIGHTHAWK\n**Location:** Tehran, secure safehouse\n**Status:** Standby\n\n**Message:** Acknowledged. No actionable int",
+      "mission_type": "field_operation"
+    },
+    {
+      "turn": 1,
+      "operative": "NIGHTHAWK",
+      "order": "Give me the updates for the current situation",
+      "response_summary": "**TRANSMISSION BEGINS**\n\n**Agent:** NIGHTHAWK\n**Location:** Tehran, secure safehouse\n**Status:** Operational\n\n**Situation Report:**\n- **Local Environm",
+      "mission_type": "field_operation"
+    }
+  ],
+  "world_events": [
+    {
+      "event_title": "Escalating Cyber Warfare in Eastern Europe",
+      "event_description": "In the past 48 hours, a series of coordinated cyber attacks have targeted critical infrastructure in Ukraine and neighboring NATO-aligned countries. Power grids in Kyiv experienced brief but widespread outages, while financial institutions in Poland and Lithuania reported sophisticated breaches. Western intelligence sources attribute the attacks to a Russian state-sponsored hacking group, though Moscow has denied involvement. The incidents coincide with heightened military exercises near the Belarusian border, raising concerns of hybrid warfare tactics. Analysts warn that these cyber operations could be a precursor to more direct kinetic actions in the region.",
+      "affected_region": "eastern_europe",
+      "tension_impact": 12,
+      "suggested_actions": [
+        "Deploy SABLE for on-the-ground reconnaissance in Kyiv to assess physical infrastructure vulnerabilities",
+        "Task CEDAR with monitoring Israeli cyber intelligence channels for potential Russian digital signatures",
+        "Initiate diplomatic backchannel communications to de-escalate tensions before further attacks occur",
+        "Prepare extraction protocols for high-value assets in the region"
+      ],
+      "turn": 1,
+      "timestamp": "2026-02-28T20:59:47.269292"
+    },
+    {
+      "event_title": "Cyberattack on Kyiv Power Grid Triggers Blackout",
+      "event_description": "In the early hours of this morning, a sophisticated cyberattack targeted Ukraine's power grid, plunging Kyiv and surrounding regions into darkness. Initial reports indicate that the attack, which exploited vulnerabilities in the grid's control systems, has left over 2 million residents without electricity. Ukrainian officials have pointed to 'foreign state-sponsored actors' as the likely culprits, though no group has yet claimed responsibility. The attack coincides with heightened military tensions along the eastern border, where Russian forces have been observed conducting large-scale exercises. Analysts warn that this could mark a dangerous escalation in hybrid warfare tactics, blending cyber operations with traditional military posturing.",
+      "affected_region": "eastern_europe",
+      "tension_impact": 12,
+      "suggested_actions": [
+        "Deploy SABLE to investigate the cyberattack's origin and assess potential follow-up threats",
+        "Task GHOST with gathering intelligence on Russian military movements near the Ukrainian border",
+        "Initiate contact with allied intelligence agencies to share cyber threat indicators and coordinate response",
+        "Prepare contingency plans for potential retaliatory cyber operations or kinetic strikes"
+      ],
+      "turn": 1,
+      "timestamp": "2026-03-01T08:07:40.716906"
+    }
+  ],
+  "rogue_events": []
+}

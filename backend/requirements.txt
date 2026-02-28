@@ -1,0 +1,18 @@
+# Core
+fastapi>=0.104.0
+uvicorn>=0.24.0
+python-dotenv>=1.0.0
+pydantic>=2.0.0
+
+# AI / LLM
+mistralai>=1.0.0
+
+# Voice
+elevenlabs==2.37.0
+ffmpeg
+
+# Utilities
+python-multipart==0.0.22
+httpx>=0.25.0
+aiofiles==25.1.0
+requests>=2.31.0
