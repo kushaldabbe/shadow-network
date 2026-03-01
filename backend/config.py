@@ -16,7 +16,7 @@ ELEVENLABS_MODEL = "eleven_multilingual_v2"
 
 # Voice IDs per operative (placeholder — replace with real IDs)
 OPERATIVE_VOICES = {
-    "NIGHTHAWK": "N2lVS1w4EtoT3dr4eOWO",   # Male, calm
+    "NIGHTHAWK": "PleK417YVMP2SUWm8Btb",   # Male, calm
     "CEDAR": "IKne3meq5aSn9XLyUdCD",        # Male, clipped
     "GHOST": "TX3LPaxmHKxFdv7VOQHJ",        # Male, nervous
     "SABLE": "XB0fDUnXU5powFXDhCwa",        # Female, intense
